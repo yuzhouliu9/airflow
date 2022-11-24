@@ -53,5 +53,3 @@ with DAG("my_dag",
             task_id="inaccurate",
             bash_command="echo 'inaccurate'"
         )
-
-        training_model_tasks >> choosing_best_model >> [accurate, inaccurate]
